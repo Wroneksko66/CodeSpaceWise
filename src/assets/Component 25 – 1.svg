@@ -1,0 +1,18 @@
+<svg id="Component_25_1" data-name="Component 25 – 1" xmlns="http://www.w3.org/2000/svg" width="493.135" height="493.135" viewBox="0 0 493.135 493.135">
+  <g id="Ellipse_10" data-name="Ellipse 10" transform="translate(0 180.5) rotate(-30)" fill="none" stroke="#694bf5" stroke-width="3">
+    <circle cx="180.5" cy="180.5" r="180.5" stroke="none"/>
+    <circle cx="180.5" cy="180.5" r="179" fill="none"/>
+  </g>
+  <g id="Ellipse_11" data-name="Ellipse 11" transform="translate(67 296.548) rotate(-30)" fill="none" stroke="#694bf5" stroke-width="3">
+    <ellipse cx="180.5" cy="47" rx="180.5" ry="47" stroke="none"/>
+    <ellipse cx="180.5" cy="47" rx="179" ry="45.5" fill="none"/>
+  </g>
+  <g id="Ellipse_12" data-name="Ellipse 12" transform="translate(192.97 69.089) rotate(60)" fill="none" stroke="#694bf5" stroke-width="3">
+    <ellipse cx="180.5" cy="41.911" rx="180.5" ry="41.911" stroke="none"/>
+    <ellipse cx="180.5" cy="41.911" rx="179" ry="40.411" fill="none"/>
+  </g>
+  <g id="Ellipse_13" data-name="Ellipse 13" transform="translate(265.901 26.981) rotate(60)" fill="none" stroke="#694bf5" stroke-width="3">
+    <ellipse cx="180.5" cy="127.018" rx="180.5" ry="127.018" stroke="none"/>
+    <ellipse cx="180.5" cy="127.018" rx="179" ry="125.518" fill="none"/>
+  </g>
+</svg>

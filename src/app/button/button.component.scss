@@ -1,0 +1,25 @@
+.button {
+  margin-right: 32px;
+  border: 1px solid #000;
+  border-radius: 50px;
+  padding: 15px 34px;
+  text-decoration: none;
+  min-width: 170px;
+
+  &:hover {
+    color: #fff;
+    border: 1px solid #694BF5;
+    background-color: #694BF5;
+  }
+  &.button--accent{
+    color:white;
+    background-color: black;
+  }
+  &.button--accent:hover{
+    color: #fff;
+    border: 1px solid #694BF5;
+    background-color: #694BF5;
+  }
+}
+
+

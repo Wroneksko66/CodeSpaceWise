@@ -1,0 +1,52 @@
+
+.main {
+  height: 810px;
+  margin: 10px 200px;
+
+
+  .combine {
+    text-align: center;
+    position: relative;
+    .line {
+      position: absolute;
+      left: 265px;
+      top:10px;
+      display: flex;
+      align-items: center;
+      width: 30px;
+      border: 1px solid #694BF5;
+    }
+
+    p {
+      text-transform: uppercase;
+      font-weight: bolder;
+      font-size: 14px;
+      text-align: center
+    }
+  }
+
+  h1 {
+    font-size: 86px;
+    text-align: center
+  }
+
+  .text {
+    width: 600px;
+
+    span {
+
+      text-align: center;
+    }
+  }
+
+  .box {
+    display: flex;
+    justify-content: center;
+
+    .button {
+      width: 200px;
+      margin-top: 20px;
+    }
+  }
+
+}

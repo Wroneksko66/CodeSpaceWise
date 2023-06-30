@@ -1,0 +1,37 @@
+<div class=" container-fluid">
+  <div class="row header">
+    <div class="col-auto img1"><img src="assets/Component%201%20–%201.svg" alt="logo"></div>
+
+    <div class="nav col-auto">
+      <ul class="row nav">
+        <li class="col-auto">
+          <button class="btn" (click)="onMenuItemSelect('element1')">Web Design</button>
+        </li>
+        <li class="col-auto">
+          <button class="btn" (click)="onMenuItemSelect('element2')">Technology</button>
+        </li>
+        <li class="col-auto"><a>Our Project</a></li>
+        <li class="col-auto"><a>About Us</a></li>
+        <li class="col-auto"><a>Blog</a></li>
+        <li class="col-auto"><a class="button">
+          <app-button [description]="nameInput"></app-button>
+        </a></li>
+
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container-fluid color">
+
+  <div class="banner">
+    <h1>Wise Service For Your Web Needs</h1>
+    <p>Revolutionizing the way you business online</p>
+    <div class="button2">
+      <app-button [themeButton]="ThemeButton.accent" [description]="nameInput"></app-button>
+    </div>
+
+  </div>
+</div>
+
+
+

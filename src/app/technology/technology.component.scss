@@ -1,0 +1,46 @@
+h2 {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.con {
+  background-color: #f4f4f4;
+  padding: 124px 40px;
+
+  .title {
+    h1 {
+      font-size: 80px;
+      font-weight: 600;
+    }
+
+    img {
+      margin-top: 56px;
+    }
+  }
+
+  .button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: start;
+    .btn {
+      width: 200px;
+      max-width: 100%;
+    }
+  }
+
+  .icons {
+    margin-top: 150px;
+    display: flex;
+    flex-wrap: nowrap;
+
+    .icon {
+      height: 30px;
+      width: auto;
+      padding: 5px 15px;
+      background-color: #fff;
+      border-radius: 20px;
+      margin-right: 20px;
+    }
+
+  }
+}
