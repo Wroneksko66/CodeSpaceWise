@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {ThemeButton} from "../model/enum";
+import {ThemeButton} from "../../../../app/model/enum";
 
 @Component({
   selector: 'app-our-wise-service1',

@@ -1,26 +1,28 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import {MatTooltipModule} from '@angular/material/tooltip';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { ButtonComponent } from './button/button.component';
-import { OurWiseService1Component } from './our-wise-service1/our-wise-service1.component';
-import { TechnologyComponent } from './technology/technology.component';
-import { BlogComponent } from './blog/blog.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsComponent } from '../modules/forms/forms/forms.component';
+import {ReactiveFormsModule} from "@angular/forms";
+import {SharedModule} from "../modules/shared/shared.module";
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ButtonComponent,
-    OurWiseService1Component,
-    TechnologyComponent,
-    BlogComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatTooltipModule,
+    ReactiveFormsModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

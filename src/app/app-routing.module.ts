@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {OurWiseService1Component} from "./our-wise-service1/our-wise-service1.component";
-import {TechnologyComponent} from "./technology/technology.component";
+import {FormsComponent} from "../modules/forms/forms/forms.component";
+
 
 const routes: Routes = [
-  {path:'OurWiseService/:elementId', component:OurWiseService1Component},
-  {path:'Technology/:elementId', component:TechnologyComponent},
+  {path:'', loadChildren:()=>import('../modules/main-page/main-page.module').then(m => m.MainPageModule)},
+  {path:'forms', loadChildren:()=>import('../modules/forms/forms.module').then(m => m.FormsModule)},
 ];
 
 @NgModule({

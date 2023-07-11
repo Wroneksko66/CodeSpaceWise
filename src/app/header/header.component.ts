@@ -1,6 +1,5 @@
 import {Component, EventEmitter, Output} from '@angular/core';
-import {ThemeButton} from "../model/enum";
-import {ScrollServiceService} from "../service/scroll-service.service";
+import {ScrollServiceService} from "../../modules/shared/service/scroll-service.service";
 
 @Component({
   selector: 'app-header',
@@ -9,13 +8,15 @@ import {ScrollServiceService} from "../service/scroll-service.service";
 })
 export class HeaderComponent {
   @Output() menuItemSelect:EventEmitter<string> = new EventEmitter<string>();
-  nameInput: string = " Learn More"
-  ThemeButton = ThemeButton;
-
-  constructor() {
+  nameInput: string = " Get a Quote"
+  tooltipInfo: string = "Coming soon";
+  constructor( private scrollServiceService: ScrollServiceService) {
   }
+
+
 onMenuItemSelect(menuItem:string){
-    this.menuItemSelect.emit(menuItem);
+    // this.scrollServiceService.scrollTo$.next(menuItem);
+  this.scrollServiceService.scrollElement(menuItem)
 }
 
 }

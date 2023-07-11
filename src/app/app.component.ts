@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import {ScrollServiceService} from "./service/scroll-service.service";
 
 @Component({
   selector: 'app-root',
@@ -9,11 +8,11 @@ import {ScrollServiceService} from "./service/scroll-service.service";
 export class AppComponent {
   title = 'SpaceWise';
 
-  constructor(private scrollServiceService:ScrollServiceService) {
+  constructor() {
   }
 
-  onMenuItemSelect(elementId:string) {
-    this.scrollServiceService.scrollElement(elementId);
-  }
+  // onMenuItemSelect(elementId:string) {
+  //   this.scrollServiceService.scrollElement(elementId);
+  // }
 }
 

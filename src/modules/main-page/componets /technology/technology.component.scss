@@ -9,23 +9,22 @@ h2 {
 
   .title {
     h1 {
-      font-size: 80px;
+      font-size: 5.5vw;
       font-weight: 600;
+      padding: 24.5px 0 38.5px;
     }
 
     img {
       margin-top: 56px;
+      width: 21.7vw;
+      min-width: 290px;
     }
   }
 
-  .button {
+  .buttons {
     margin-top: 20px;
     display: flex;
     justify-content: start;
-    .btn {
-      width: 200px;
-      max-width: 100%;
-    }
   }
 
   .icons {

@@ -1,0 +1,28 @@
+.color{
+  background-color: #f4f4f4;
+  .banner {
+
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 84px;
+
+    h1 {
+      line-height: .8;
+      color:transparent;
+      font-weight: bold;
+      font-size: 9.3vw;
+      letter-spacing: -.28125vw;
+      text-shadow: -1px 0 #694bf5, 0 1px #694bf5, 1px 0 #694bf5, 0 -1px #694bf5;
+    }
+
+    .button2 {
+      border-radius: 50px;
+      width: 200px;
+    }
+  }
+}
+
+
+

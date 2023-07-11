@@ -1,0 +1,44 @@
+<div class="container-fluid section">
+  <div class="row">
+    <div class="col-12 col-sm-8 col-lg-5">
+      <h1 class="section__title">Hey!</h1>
+      <h1 class="section__title">Tell Us All The Things</h1>
+      <h2>I'm interested in...</h2>
+      <div class="row">
+        <div class="col-8">
+          <div class="row">
+            <div class="section__tag col-auto"> Web Development</div>
+            <div class="section__tag col-auto">UI/UX Design</div>
+            <div class="section__tag col-auto">Branding</div>
+          </div>
+        </div>
+      </div>
+      <div class="forms">
+        <form [formGroup]="profileForm">
+          <mat-form-field class="form">
+            <mat-label>Your personal data</mat-label>
+            <input matInput placeholder="Placeholder">
+          </mat-form-field>
+
+          <mat-form-field class="form">
+            <mat-label> Your email</mat-label>
+            <input matInput placeholder="Placeholder">
+          </mat-form-field>
+
+          <mat-form-field class="form">
+            <mat-label>Your number</mat-label>
+            <input matInput placeholder="Placeholder">
+          </mat-form-field>
+        </form>
+      </div>
+      <div class="btn">
+        <app-button  routerLink="/forms"  [description]="nameInput"></app-button>
+
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-4 col-lg-7">
+      <img class="section__logo" src="../../../assets/project.contact-bg.svg">
+    </div>
+  </div>
+</div>

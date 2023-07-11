@@ -11,8 +11,9 @@ body {
   align-items: center;
   justify-content: space-between;
 
-  .img1 {
-    margin-left: 20px
+  &__img1 {
+    margin-left: 20px;
+    cursor: pointer;
   }
 
   .nav {
@@ -20,44 +21,23 @@ body {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
+    margin-right: 10px;
     .btn{
-      padding: 20px;
       background-color: white;
       border: none;
+      text-transform: uppercase;
+      font-weight: bolder;
     }
 
     .btn:hover{
-      opacity: 0.8;
+      color:#694bf5;
     }
 
     .button {
       text-decoration: none;
       color: black;
       text-align: center;
+      cursor: pointer;
     }
   }
 }
-.color{
-  background-color: #f4f4f4;
-  .banner {
-
-    height: 40rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-left: 84px;
-
-    h1 {
-      font-weight: bold;
-      font-size: 8rem;
-    }
-
-    .button2 {
-      border-radius: 50px;
-      width: 200px;
-    }
-  }
-}
-
-
-
