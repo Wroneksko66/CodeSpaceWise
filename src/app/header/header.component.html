@@ -1,32 +1,28 @@
-<div class=" container-fluids">
-  <div class="row header">
-    <div class="col-auto header__img1">
-      <img routerLink="" src="assets/Component%201%20–%201.svg" alt="logo"></div>
+<div class="container-fluid header">
+  <img class="header__logo" routerLink="" src="assets/Component%201%20–%201.svg" alt="logo">
+  <button (click)="changePosition()" href="" class="header__toggle-button">
+    <span class="header__bar"></span>
+    <span class="header__bar"></span>
+    <span class="header__bar"></span>
+  </button>
+  <nav class="header__nav" [ngClass]="{'header__nav--position':openNavigation}">
+    <ul class="header__list">
+      <li class="header__item">
+        <button class="header__btn" [matTooltip]="tooltipInfo">Web Design</button>
+      </li>
+      <li class="header__item">
+        <button class="header__btn" (click)="onMenuItemSelect('element2')">Our Projects</button>
+      </li>
+      <li class="header__item">
+        <button class="header__btn" (click)="onMenuItemSelect('element2')">About Us</button>
+      </li>
+      <li class="header__item">
+        <button class="header__btn" (click)="onMenuItemSelect('element2')">Blog</button>
+      </li>
+      <li class="header__item">
+        <app-button routerLink="/forms" [description]="nameInput"></app-button>
+      </li>
+    </ul>
+  </nav>
 
-    <div class="nav col-auto">
-      <ul class="row nav">
-        <li class="col-auto">
-          <button [matTooltip]="tooltipInfo" class="btn">Web Design</button>
-        </li>
-        <li class="col-auto">
-          <button class="btn" [matTooltip]="tooltipInfo" (click)="onMenuItemSelect('element2')">Technology</button>
-        </li>
-        <li class="col-auto">
-          <button class="btn" [matTooltip]="tooltipInfo" (click)="onMenuItemSelect('element2')">Our Project</button>
-        </li>
-        <li class="col-auto">
-          <button class="btn" [matTooltip]="tooltipInfo" (click)="onMenuItemSelect('element2')">About Us</button>
-        </li>
-        <li class="col-auto">
-          <button class="btn" [matTooltip]="tooltipInfo" (click)="onMenuItemSelect('element2')">Blog</button>
-        </li>
-        <li class="col-auto">
-          <app-button routerLink="/forms" [description]="nameInput"></app-button>
-        </li>
-
-      </ul>
-    </div>
-  </div>
 </div>
-
-

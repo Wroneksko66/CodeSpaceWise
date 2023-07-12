@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;500;600&display=swap');
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/mixins';
 
 body {
   font-family: 'Manrope', sans-serif;
@@ -6,38 +9,91 @@ body {
 }
 
 .header {
-  height: 100px;
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+  padding: 14px 12px;
+  background-color: #f4f4f4;
 
-  &__img1 {
-    margin-left: 20px;
-    cursor: pointer;
+
+  &__toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    border:0;
+    background-color: transparent;
+    @include media-breakpoint-down(lg) {
+      display: flex;
+    }
+  }
+&__logo{
+  z-index: 2;
+}
+  &__bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
   }
 
-  .nav {
+  &__nav {
+    @include media-breakpoint-down(lg) {
+      top: -700px;
+      left: 0;
+      position: absolute;
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      background-color: #f4f4f4;
+      z-index: 1;
+      padding: 25px 0;
+      transition: .4s ease-in-out;
+    }
+  }
+
+  &__nav--position{
+    top:60px;
+
+  }
+
+  &__list {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    @include media-breakpoint-down(lg) {
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      margin:auto;
+    }
+
+  }
+
+  &__item {
     text-decoration: none;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    margin-right: 10px;
-    .btn{
-      background-color: white;
-      border: none;
-      text-transform: uppercase;
-      font-weight: bolder;
-    }
-
-    .btn:hover{
-      color:#694bf5;
-    }
-
-    .button {
-      text-decoration: none;
-      color: black;
+    margin-right: 20px;
+    @include media-breakpoint-down(lg) {
       text-align: center;
-      cursor: pointer;
+      padding: 5px 0;
     }
+  }
+
+  &__btn {
+    border: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    background-color: transparent;
+    display: block;
   }
 }

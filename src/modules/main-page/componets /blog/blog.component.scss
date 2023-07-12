@@ -1,47 +1,68 @@
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/mixins';
+
 .new {
   padding-top: 89px;
   padding-bottom: 64px;
+
   &__column {
-    border-radius: 50px;;
+    border-radius: 50px;
     padding: 30px;
+
     &:hover {
       box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     }
   }
+&__row{
+  display: flex;
+  justify-content: center;
+}
+  &__articles {
+    display: flex;
+    flex-wrap: wrap;
+    @include media-breakpoint-down(lg) {
+      justify-content: center;
+    }
+  }
 
-  &__title{
+  &__title {
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-weight:300;
+    font-weight: 300;
   }
+
   &__subtitle {
     font-size: 4.5vw;
     padding-bottom: 5vw;
   }
 
-  &__date{
-    font-size:16px;
+  &__date {
+    font-size: 16px;
   }
 
-  &__titleArticle{
+  &__titleArticle {
     font-size: 2vw;
     padding-top: 30px;
 
   }
- &__link{
-   padding-top: 10px;
-   margin-top:4vh;
-   margin-bottom: 4vh;
-   a{
-     color:#000;
-     letter-spacing: 2.8px;
-   }
- }
+
+  &__link {
+    padding-top: 10px;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+
+    a {
+      color: #000;
+      letter-spacing: 2.8px;
+    }
+  }
 
   .img {
     margin-top: 20px;
     max-width: 100%;
+    padding-bottom: 40px;
   }
 
 }
